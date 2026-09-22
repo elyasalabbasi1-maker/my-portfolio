@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f19;
+    color: #f5f7fb;
+    line-height: 1.6;
+}
+header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #222a3a;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+nav span {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav a {
+    color: #f5f7fb;
+    text-decoration: none;
+    font-size: 15px;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+.hero h2 {
+    color: #4f8cff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.hero p {
+    color: #a7b0c0;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.hero a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4f8cff;
+    color: white;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.hero img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+     border: 3px solid #4f8cff;
+}
+
+.hero a:hover {
+    background-color: #3b73d9;
+}
+section {
+    margin-bottom: 100px;
+}
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+section p {
+    color: #a7b0c0;
+    font-size: 17px;
+    max-width: 800px;
+}
+section ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    list-style: none;
+}
+section li {
+    padding: 18px;
+    background-color: #111827;
+    border: 1px solid #222a3a;
+    border-radius: 12px;
+}
+article {
+    padding: 25px;
+    background-color: #111827;
+    border: 1px solid #222a3a;
+    border-radius: 12px;
+    max-width: 800px;
+}
+section a {
+    color: #4f8cff;
+    text-decoration: none;
+}
+section a {
+    display: inline-block;
+    margin-right: 15px;
+}
+section a {
+    color: #4f8cff;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    section ul {
+    grid-template-columns: 1fr;
+}
+.hero img {
+    width: 240px;
+    height: 240px;
+}
+.hero h1 {
+    font-size: 40px;
+}
+nav {
+    flex-direction: column;
+    gap: 15px;
+}
+
+}
+html {
+    scroll-behavior: smooth;
+}
